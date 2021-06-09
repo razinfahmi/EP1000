@@ -1,10 +1,3 @@
-body{
-    width:100%;
-    margin-left:auto;
-    margin-right:auto;          /* center page */
-    font-family: Arial;         /* change font type */
-    background-color: lightblue;  /* change background color */
-}
 
 header {
     background-color: black;
