@@ -1,22 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>My Project Site</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("greenbackground.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 <body>
-    <header>
-        <h1>My Project Site</h1>
-            <nav>
-        <ul>
-            <li><a href="index.html" class="active" >Main</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="aboutme.html" >About</a></li>
-        </ul>
-    </nav>
-    </header>
-    <h2>Welcome</h2>
-    <p>This is my website showing my capabilities on digital fabrication and how well I document things on this site.</p>
-    <h3>What we cover</h3>
-    <p>I will be covering the foundations of digital fabrication and my journey through this module. For this module, i intend to prototype a...</p></body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+        <div class="w3-col s2">
+      <a href="#overview" class="w3-button w3-block w3-black">OVERVIEW</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#menu" class="w3-button w3-block w3-black">ASSIGNMENTS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="#where" class="w3-button w3-block w3-black">FINAL PROJECT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">...</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-tag w3-wide" style="font-size:60px">EP1000<br>Digital Fabrication & Prototyping Fundamental</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">...</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+  <!-- About Container -->
+<div class="w3-container" id="overview">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">OVERVIEW</span></h5>
+    <p> In this module i learnt how to use Digital Fabrication techniques in designing and creating prototypes. During the process i have also learnt how to document and publish my work continously and this can be found under the Assignments tab. I used Computer Aided Design techniques, 3D printing and laser cutting methods to develop my prototypes and complete my assignments. </p>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>Hello, my name is Razin Fahmi and I'm currently in my final year in Singapore Polytechnic studying under the Diploma of Mechanical Engineering. My current class is DME/FT/3A/01 and I'm specilising in Aerospace Engineering.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><strong>Email:</strong> razinfahmi12.19@ichat.sp.edu.sg</p>
+      <p><strong>Telegram:</strong> @fahmibinhaizad</p>
+    </div>
+    <img src="selfie.png" style="width:100%;max-width:1000px"  class="w3-margin-top">
+    <p>I've been leaning more towards the fabrication and manufacturing side of engineering, thus making me choose this elective module. Through EP1000, I was able to learn the basics of fabrication and prototyping through ways such as laser cutting, so that I can proudly apply these softskills learnt through this elective module in the future. I hope that through these efforts, I can widen my skillset and be a better Engineer.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ASSIGNMENTS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'HTML');" id="myLink">
+        <div class="w3-col s6 tablink">HTML</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CSS');">
+        <div class="w3-col s6 tablink">CSS</div>
+      </a>
+       <a href="javascript:void(0)" onclick="openMenu(event, 'GITHUB');">
+        <div class="w3-col s6 tablink">GITHUB</div>
+      </a>
+             <a href="javascript:void(0)" onclick="openMenu(event, 'CAD');">
+        <div class="w3-col s6 tablink">CAD</div>
+      </a>
+    </div>
+
+    <div id="HTML" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="CSS" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+
+        <div id="GITHUB" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 3.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div> 
+
+            <div id="CAD" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 5.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div> 
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FINAL PROJECT</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
 </html>
