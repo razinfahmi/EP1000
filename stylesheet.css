@@ -69,3 +69,25 @@ header  {
   position: sticky;
   top: 0;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    height: 2000px;
+    background-color: red;
+    background-image: greenbackground.jpg;
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: fixed;
+    }
+
+body {
+    height: 100%;
+    background-image: linear-gradient(hsl(10,90,66), transparent 70%);
+    background-size: 100% 100%;
+    mix-blend-mode: difference;
+    }
